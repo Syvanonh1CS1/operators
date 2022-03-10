@@ -8,7 +8,7 @@
 #include <stdio.h>
 
 int main(){
-    int A,B,C;
+    int A,B,C,D;
     
     printf("\nEnter A: ");
     scanf("%d",&A);
@@ -16,41 +16,46 @@ int main(){
     printf("\nEnter B: ");
     scanf("%d",&B);
     
+    C=A;
     A+=B;
     printf("\nA += B = %d\n",A);
-    A-=B;
+    A=C;
     
     A-=B;
     printf("\nA -= B = %d\n",A);
-    A+=B;
+    A=C;
     
     A*=B;
     printf("\nA *= B = %d\n",A);
-    A/=B;
+    A=C;
     
     A/=B;
     printf("\nA /= B = %d\n",A);
-    A*=B;
+    A=C;
     
     A%=B;
     printf("\nA %%= B = %d\n",A);
+    A=C;
     
+    D=B;
     B<<=2;
     printf("\nB <<= 2 = %d\n",B);
-    B>>=2;
+    B=D;
     
     B>>=2;
     printf("\nB >>= 2 = %d\n",B);
-    B<<=2;
+    B=D;
     
     B&=10;
     printf("\nB &= 10 = %d\n",B);
+    B=D;
     
     B^=10;
     printf("\nB ^= 10 = %d\n",B);
+    B=D;
     
     B|=10;
-    printf("\nA |= 10 = %d\n",B);
+    printf("\nB |= 10 = %d\n",B);
     
     return 0;
 }
